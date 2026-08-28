@@ -4,7 +4,7 @@ import hmac
 import json
 import os
 
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
