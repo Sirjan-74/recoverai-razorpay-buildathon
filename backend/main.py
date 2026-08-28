@@ -37,6 +37,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return RedirectResponse(url="/docs")
+
 
 def now():
     return datetime.now()
